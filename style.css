@@ -1,126 +1,241 @@
-
-
-    body{
+body{
         margin: 0;
+        background-color: skyblue;
+        width: 100%;
+        /* height: 100%; */
     }
-.container{
-    width: 40%;
-    margin: 0 auto;
-    box-sizing: border-box;
-    height: 650px;
-    color: white;
-    background-color: skyblue;
-    box-shadow: 1px 1px 5px 0 gray;
+
+    .container{
+        margin: 0 auto;
+        width: inherit;
+        height: inherit;
+        box-sizing: border-box;
+        color: white;
+        background-color: inherit;
+        
+    }
+
+    #convertTemperature{
+        
+        height: 60px;
+        border: 1px solid grey;
+        font-size: 50px;
+        border-radius: 5%;
+    }
+
+    .header{
+        border: 1px solid grey;
+        width: 100%;
+        height: 200px;
+        background-color: black;
+        box-sizing: border-box;
+        padding-left: 30px;
+        padding-top: 7px;
+    }
+
+    .search{
+        font-size: 80px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    #cityLocation{
+        display: flex;
+        flex-direction: row;
+        box-sizing: border-box;
+    }
     
-}
-#cityLocation{
-    display: flex;
-    flex-direction: row;
-    box-sizing: border-box;
-}
+    #errors{
+        background-color: white;
+        color: red;
+    }
 
-#errors{
-    background-color: white;
-    color: red;
-}
-
-.header{
-    border: 1px solid grey;
-    width: 100%;
-    height: 100px;
-    background-color: black;
-    box-sizing: border-box;
-    padding-left: 20px;
-    padding-top: 18px;
-}
-
-.search{
-font-style: oblique;
-}
-
-.container-body{
-    padding-left: 20px;
-}
-
-.location, .degree{
-    font-style: initial;
-    font-size: 50px;
-    font-weight: bolder;
-    color: grey;
-}
-
-#degree-profile{
-    display: flex;
-    flex-direction: row;
-    box-sizing: border-box;
-}
-#country{
-    margin-left: 25px;
-    margin-top: 50px;
-}
-#weatherImage{
-    margin-left: 25px;
-    margin-top: 10px;
-}
-
-.wind-speed, .humidity, .explanation{
-    font-family:  Georgia, Times, 'Times New Roman', serif;
-    font-size: 22px;
-    font-weight: bold;
-    color: black;
-}
-.footer{
-    width:inherit;
-    position: fixed;
-    bottom:0;
-    box-sizing: border-box;
-    margin-bottom: 4px;
-    margin-left: 3px;
-}
-
-#searchInput{
-    width: 60%;
-    height: 46px;
-    border: 1px solid grey;
-    font-size: 20px;
-    border-radius: 5%;
-}
-
-#searchButton{
-    width: 37%;
-    height: 46px;
-    border: 1px solid grey;
-    border-radius: 5%;
-    background-color: lightgreen;
-    font-size: 20px;
-}
-
-#searchButton:focus{
-    cursor: pointer;
-    box-shadow: 3px 3px 5px 0 gray;
-}
-
-
-/*mobile view css */
-@media screen and (max-width: 600px){
-
-.container{
-    width: 100%;
-    margin: 0 auto;
-    box-sizing: border-box;
-    height: 665px;
-    color: white;
-    background-color: skyblue;
-    box-shadow: 1px 1px 5px 0 gray;
+    .container-body{
+        padding-left: 25px;
+    }
     
-}
-.footer{
-    width:inherit;
-    position: fixed;
-    bottom:0;
-    box-sizing: border-box;
-    margin-bottom: 1px;
-    margin-left: 3px;
-}
+    .location, .degree{
+        font-style: initial;
+        font-size: 115px;
+        font-weight: bolder;
+        color: grey;
+    }
+    #degree-profile{
+        display: flex;
+        flex-direction: row;
+        box-sizing: border-box;
+    }
 
-}
+    #weatherImage{
+        padding-top: 90px;
+        padding-left: 50px;
+        color: white;
+        
+    }
+    #country{
+        padding-top: 120px;
+        padding-left: 50px;
+        color: white;
+    }
+    
+    .wind-speed, .humidity, .explanation{
+        font-family:  Georgia, Times, 'Times New Roman', serif;
+        font-size: 50px;
+        font-weight: bold;
+        color: black;
+    }
+    .footer{
+        width: 100%;
+        height: 150px;
+        position: fixed;
+        bottom:0;
+        box-sizing: border-box;
+        margin-bottom: 4px;
+        margin-left: 3px;
+        
+    }
+    
+    #searchInput{
+        width:65%;
+        height: 149px;
+        border: 1px solid grey;
+        font-size: 50px;
+        
+    }
+    
+    #searchButton{
+        width: 33%;
+        height: 149px;
+        border: 1px solid grey;
+        border-radius: 5%;
+        background-color: lightgreen;
+        font-size: 50px;
+    }
+    
+    #searchButton:focus{
+        cursor: pointer;
+        box-shadow: 3px 3px 5px 0 gray;
+    }
+
+
+
+     @media only screen and (min-width: 1200px) {
+
+        body{
+            margin: 0;
+            background-color: white;
+            width: 100%;
+        }
+    .container{
+        width: 40%;
+        margin: 0 auto;
+        box-sizing: border-box;
+        height: 950px;
+        color: white;
+        background-color: skyblue;
+        box-shadow: 1px 1px 5px 0 gray;
+        
+    }
+    #cityLocation{
+        display: flex;
+        flex-direction: row;
+        box-sizing: border-box;
+    }
+    
+    #errors{
+        background-color: white;
+        color: red;
+    }
+    
+    .header{
+        border: 1px solid grey;
+        width: 100%;
+        height: 100px;
+        background-color: black;
+        box-sizing: border-box;
+        padding-left: 20px;
+        padding-top: 3px;
+    }
+
+    #convertTemperature{
+        
+        height: 30px;
+        border: 1px solid grey;
+        font-size: 20px;
+        border-radius: 5%;
+    }
+
+    
+    .search{
+    font-style: oblique;
+    font-size: 40px;
+    }
+    
+    .container-body{
+        padding-left: 20px;
+    }
+    
+    .location, .degree{
+        font-style: initial;
+        font-size: 50px;
+        font-weight: bolder;
+        color: grey;
+    }
+    
+    #degree-profile{
+        display: flex;
+        flex-direction: row;
+        box-sizing: border-box;
+    }
+    #country{
+        margin-left: 25px;
+        margin-top: 50px;
+        padding-left: 0;
+        padding-top: 0;
+    }
+    #weatherImage{
+        margin-left: 25px;
+        margin-top: 10px;
+        padding-left: 0;
+        padding-top: 0;
+    }
+    
+    .wind-speed, .humidity, .explanation{
+        font-family:  Georgia, Times, 'Times New Roman', serif;
+        font-size: 22px;
+        font-weight: bold;
+        color: black;
+    }
+    .footer{
+        width:inherit;
+        height: 50px;
+        position: fixed;
+        bottom:0;
+        box-sizing: border-box;
+        margin-bottom: 4px;
+        margin-left: 3px;
+    }
+    
+    #searchInput{
+        width: 60%;
+        height: 46px;
+        border: 1px solid grey;
+        font-size: 20px;
+        border-radius: 5%;
+    }
+    
+    #searchButton{
+        width: 37%;
+        height: 46px;
+        border: 1px solid grey;
+        border-radius: 5%;
+        background-color: lightgreen;
+        font-size: 20px;
+    }
+    
+    #searchButton:focus{
+        cursor: pointer;
+        box-shadow: 3px 3px 5px 0 gray;
+    }
+    } 
+
+
+    
